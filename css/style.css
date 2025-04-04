@@ -247,4 +247,12 @@ footer {
 .filtre-btn.actiu {
   text-decoration: underline;
 }
+/* Eliminar color blau dels enllaços */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
