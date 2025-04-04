@@ -77,9 +77,13 @@ footer {
   height: 200px;
   object-fit: cover;
 }
+/* Títols dels projectes */
 .projecte h2 {
-  font-size: 1.3rem;
-  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000;
+  padding: 15px 10px;
+  text-align: center;
 }
 .projecte p {
   padding: 0 15px 15px;
