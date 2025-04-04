@@ -22,18 +22,25 @@
 
   <div class="container">
     <h1>PROJECTES</h1>
-    <div class="grid">
 
-      <!-- Projecte 1 (10 imatges) -->
-      <div class="projecte">
+    <!-- Filtres -->
+    <div class="filtres">
+      <button class="filtre-btn actiu" data-filtre="tots">Tots</button>
+      <button class="filtre-btn" data-filtre="interiorisme">Interiorisme</button>
+      <button class="filtre-btn" data-filtre="arquitectura">Arquitectura</button>
+    </div>
+
+    <div class="grid">
+      <!-- Projecte 1 - Arquitectura -->
+      <div class="projecte" data-categoria="arquitectura">
         <a href="projecte1.html">
           <img src="images/projecte1.jpg" alt="Projecte 1 - 1" />
           <h2>PROJECTE CN</h2>
         </a>
       </div>
 
-      <!-- Projecte 2 -->
-      <div class="projecte">
+      <!-- Projecte 2 - Interiorisme -->
+      <div class="projecte" data-categoria="interiorisme">
         <div class="slider">
           <img src="images/projecte2.jpg" alt="Projecte 2 - 1" class="slide active" />
           <img src="images/projecte2-2.jpg" alt="Projecte 2 - 2" class="slide" />
@@ -45,8 +52,8 @@
         <p>Redisseny d’espais interiors per potenciar lluminositat i funcionalitat.</p>
       </div>
 
-      <!-- Projecte 3 -->
-      <div class="projecte">
+      <!-- Projecte 3 - Arquitectura -->
+      <div class="projecte" data-categoria="arquitectura">
         <div class="slider">
           <img src="images/projecte3.jpg" alt="Projecte 3 - 1" class="slide active" />
           <img src="images/projecte3-2.jpg" alt="Projecte 3 - 2" class="slide" />
@@ -57,7 +64,6 @@
         <h2>Centre Veterinari El Cadell</h2>
         <p>Espais diàfans pensats per al confort i la tranquil·litat dels usuaris.</p>
       </div>
-
     </div>
   </div>
 
@@ -65,7 +71,7 @@
     © 2025 L'Aurea Arquitectura
   </footer>
 
-  <!-- Carrusel Script -->
+  <!-- Script del carrusel -->
   <script>
     document.querySelectorAll(".slider").forEach(slider => {
       const slides = slider.querySelectorAll(".slide");
@@ -91,6 +97,30 @@
     });
   </script>
 
+  <!-- Script dels filtres -->
+  <script>
+    const botoFiltres = document.querySelectorAll(".filtre-btn");
+    const projectes = document.querySelectorAll(".projecte");
+
+    botoFiltres.forEach(boto => {
+      boto.addEventListener("click", () => {
+        botoFiltres.forEach(b => b.classList.remove("actiu"));
+        boto.classList.add("actiu");
+
+        const categoria = boto.dataset.filtre;
+
+        projectes.forEach(projecte => {
+          if (categoria === "tots" || projecte.dataset.categoria === categoria) {
+            projecte.style.display = "block";
+          } else {
+            projecte.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
+
 
