@@ -31,43 +31,41 @@
     </div>
 
     <div class="grid">
-      
       <!-- Projecte 1 - Arquitectura -->
-      <div class="projecte arquitectura">
+      <div class="projecte arquitectura" data-categoria="arquitectura">
         <a href="projecte1.html">
           <img src="images/projecte1.jpg" alt="Projecte 1 - 1" />
         </a>
         <h2><a href="projecte1.html">PROJECTE CN</a></h2>
       </div>
-    </div>
-    
+
       <!-- Projecte 2 - Interiorisme -->
-    <div class="projecte" data-categoria="interiorisme">
-      <div class="slider">
-        <img src="images/projecte2.jpg" alt="Projecte 2 - 1" class="slide active" />
-        <img src="images/projecte2-2.jpg" alt="Projecte 2 - 2" class="slide" />
-        <img src="images/projecte2-3.jpg" alt="Projecte 2 - 3" class="slide" />
-        <button class="prev">&#10094;</button>
-         <button class="next">&#10095;</button>
+      <div class="projecte interiorisme" data-categoria="interiorisme">
+        <div class="slider">
+          <img src="images/projecte2.jpg" alt="Projecte 2 - 1" class="slide active" />
+          <img src="images/projecte2-2.jpg" alt="Projecte 2 - 2" class="slide" />
+          <img src="images/projecte2-3.jpg" alt="Projecte 2 - 3" class="slide" />
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <h2>Reforma d'interiors a Manresa</h2>
+        <p>Redisseny d’espais interiors per potenciar lluminositat i funcionalitat.</p>
       </div>
-       <h2>Reforma d'interiors a Manresa</h2>
-       <p>Redisseny d’espais interiors per potenciar lluminositat i funcionalitat.</p>
-     </div>
 
       <!-- Projecte 3 - Arquitectura -->
-    <div class="projecte" data-categoria="arquitectura">
-      <div class="slider">
-         <img src="images/projecte3.jpg" alt="Projecte 3 - 1" class="slide active" />
-         <img src="images/projecte3-2.jpg" alt="Projecte 3 - 2" class="slide" />
-         <img src="images/projecte3-3.jpg" alt="Projecte 3 - 3" class="slide" />
-         <button class="prev">&#10094;</button>
-         <button class="next">&#10095;</button>
+      <div class="projecte arquitectura" data-categoria="arquitectura">
+        <div class="slider">
+          <img src="images/projecte3.jpg" alt="Projecte 3 - 1" class="slide active" />
+          <img src="images/projecte3-2.jpg" alt="Projecte 3 - 2" class="slide" />
+          <img src="images/projecte3-3.jpg" alt="Projecte 3 - 3" class="slide" />
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <h2>Centre Veterinari El Cadell</h2>
+        <p>Espais diàfans pensats per al confort i la tranquil·litat dels usuaris.</p>
       </div>
-       <h2>Centre Veterinari El Cadell</h2>
-      <p>Espais diàfans pensats per al confort i la tranquil·litat dels usuaris.</p>
-     </div>
+    </div>
   </div>
- </div>
 
   <footer>
     © 2025 L'Aurea Arquitectura
@@ -112,7 +110,7 @@
         const categoria = boto.dataset.filtre;
 
         projectes.forEach(projecte => {
-          if (categoria === "tots" || projecte.dataset.categoria === categoria) {
+          if (categoria === "tots" || projecte.classList.contains(categoria)) {
             projecte.style.display = "block";
           } else {
             projecte.style.display = "none";
@@ -124,5 +122,6 @@
 
 </body>
 </html>
+
 
 
