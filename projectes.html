@@ -2,12 +2,97 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projectes - L'Aurea Arquitectura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .logo {
+      height: 40px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .projecte {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fafafa;
+      transition: 0.3s ease;
+    }
+    .projecte:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .projecte img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .projecte h2 {
+      font-size: 1.3rem;
+      padding: 15px;
+    }
+    .projecte p {
+      padding: 0 15px 15px;
+      color: #555;
+    }
+    footer {
+      background: #f9f9f9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <img src="images/logo.png" alt="Logo" class="logo" />
+    <img src="images/logo.png" alt="Logo L'Aurea" class="logo" />
     <nav>
       <a href="index.html">Inici</a>
       <a href="projectes.html">Projectes</a>
@@ -16,12 +101,31 @@
       <a href="contacte.html">Contacte</a>
     </nav>
   </header>
-  <main>
-    <h1>Projectes</h1>
-    <p>Aquí mostrarem alguns projectes destacats del despatx.</p>
-  </main>
+
+  <div class="container">
+    <h1>Projectes destacats</h1>
+    <div class="grid">
+      <div class="projecte">
+        <img src="images/projecte1.jpg" alt="Projecte 1" />
+        <h2>Habitatge unifamiliar a Navarcles</h2>
+        <p>Projecte de reforma integral amb estructura moderna i línies netes.</p>
+      </div>
+      <div class="projecte">
+        <img src="images/projecte2.jpg" alt="Projecte 2" />
+        <h2>Reforma d'interiors a Manresa</h2>
+        <p>Redisseny d’espais interiors per potenciar lluminositat i funcionalitat.</p>
+      </div>
+      <div class="projecte">
+        <img src="images/projecte3.jpg" alt="Projecte 3" />
+        <h2>Centre terapèutic a Vic</h2>
+        <p>Espais diàfans pensats per al confort i la tranquil·litat dels usuaris.</p>
+      </div>
+    </div>
+  </div>
+
   <footer>
     © 2025 L'Aurea Arquitectura
   </footer>
+
 </body>
 </html>
