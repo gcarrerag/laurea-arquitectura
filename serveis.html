@@ -2,12 +2,91 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Serveis - L'Aurea Arquitectura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .logo {
+      height: 40px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .serveis-lista {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .servei {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fafafa;
+      transition: 0.3s ease;
+    }
+    .servei:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .servei h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    .servei p {
+      color: #555;
+    }
+    footer {
+      background: #f9f9f9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <img src="images/logo.png" alt="Logo" class="logo" />
+    <img src="images/logo.png" alt="Logo L'Aurea" class="logo" />
     <nav>
       <a href="index.html">Inici</a>
       <a href="projectes.html">Projectes</a>
@@ -16,17 +95,36 @@
       <a href="contacte.html">Contacte</a>
     </nav>
   </header>
-  <main>
+
+  <div class="container">
     <h1>Serveis</h1>
-    <ul>
-      <li>Disseny arquitectònic</li>
-      <li>Projectes d'interiorisme</li>
-      <li>Reformes i rehabilitacions</li>
-      <li>Direcció d'obra</li>
-    </ul>
-  </main>
+    <div class="serveis-lista">
+      <div class="servei">
+        <h2>Projectes d'obra nova</h2>
+        <p>Desenvolupament complet de projectes residencials i comercials des de l'esbós fins a l'execució final.</p>
+      </div>
+      <div class="servei">
+        <h2>Reformes i rehabilitacions</h2>
+        <p>Reformes integrals o parcials per optimitzar espais existents amb solucions elegants i funcionals.</p>
+      </div>
+      <div class="servei">
+        <h2>Disseny d'interiors</h2>
+        <p>Espais personalitzats amb atenció al detall, equilibri de materials i funcionalitat.</p>
+      </div>
+      <div class="servei">
+        <h2>Certificats i legalitzacions</h2>
+        <p>Gestió de certificats energètics, cèdules d’habitabilitat, ITE i altres tràmits tècnics.</p>
+      </div>
+      <div class="servei">
+        <h2>Assessorament tècnic</h2>
+        <p>Consultoria arquitectònica personalitzada per a propietaris, promotors o altres professionals.</p>
+      </div>
+    </div>
+  </div>
+
   <footer>
     © 2025 L'Aurea Arquitectura
   </footer>
+
 </body>
 </html>
