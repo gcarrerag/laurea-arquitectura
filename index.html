@@ -2,11 +2,70 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>L'Aurea Arquitectura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .logo {
+      height: 40px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 80px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    footer {
+      background: #f9f9f9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 80px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <img src="images/logo.png" alt="Logo L'Aurea" class="logo" />
     <nav>
@@ -17,12 +76,15 @@
       <a href="contacte.html">Contacte</a>
     </nav>
   </header>
-  <main>
-    <h1>Benvinguts a L'Aurea Arquitectura</h1>
+
+  <div class="container">
+    <h1>Benvinguts a<br>L'Aurea Arquitectura</h1>
     <p>Estudi d’arquitectura amb passió per l’elegància i el detall.</p>
-  </main>
+  </div>
+
   <footer>
     © 2025 L'Aurea Arquitectura
   </footer>
+
 </body>
 </html>
