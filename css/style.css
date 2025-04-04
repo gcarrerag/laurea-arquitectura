@@ -224,3 +224,28 @@ footer {
 .enrere a:hover {
   text-decoration: underline;
 }
+.filtres {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filtre-btn {
+  background-color: #eee;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.filtre-btn:hover {
+  background-color: #ddd;
+}
+
+.filtre-btn.actiu {
+  background-color: #111;
+  color: #fff;
+}
+
