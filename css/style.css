@@ -121,3 +121,19 @@ footer {
   margin: 0 auto 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.contact-links {
+  text-align: center;
+  margin-top: 30px;
+}
+.contact-links a {
+  color: #111;
+  font-weight: 500;
+  text-decoration: none;
+}
+.contact-links a:hover {
+  text-decoration: underline;
+}
+.contact-links p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
