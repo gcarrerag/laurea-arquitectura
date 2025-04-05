@@ -189,59 +189,66 @@ footer {
   text-decoration: underline;
 }
 
-/* CONTACTE */
-
-.contacte-page {
-  background: url('../images/projecte1.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #111;
+/* Nova estructura contacte */
+.contacte-nou .contacte-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
 }
 
-.contacte-container {
-  background-color: rgba(255, 255, 255, 0.85); /* fons clar translúcid */
-  max-width: 500px;
-  margin: 100px auto;
-  padding: 40px 30px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.contacte-nou .info {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
 }
 
-.contacte-container h1 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  letter-spacing: 1px;
+.contacte-nou .info h1 {
+  font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.contacte-container p {
+.contacte-nou .info p {
   font-size: 1.1rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #333;
 }
 
-.contact-links a,
-.contact-links p {
-  font-size: 1rem;
-  margin-bottom: 15px;
+.contacte-nou .contact-links a {
+  display: block;
+  font-size: 1.1rem;
   color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  margin: 12px 0;
   text-decoration: none;
 }
 
-.contact-links a:hover {
+.contacte-nou .contact-links a:hover {
   text-decoration: underline;
 }
 
-.contact-links img {
+.contacte-nou .contact-links img {
   width: 20px;
-  height: 20px;
   vertical-align: middle;
+  margin-right: 8px;
 }
+
+.contacte-nou .foto {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.contacte-nou .foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 
 
 
