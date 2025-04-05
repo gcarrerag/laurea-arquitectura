@@ -190,63 +190,70 @@ footer {
 }
 
 /* Nova estructura contacte */
-.contacte-nou .contacte-wrapper {
+.contacte-page {
+  font-family: 'Montserrat', sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+.contacte-flex {
   display: flex;
   flex-wrap: wrap;
   min-height: 80vh;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 40px;
 }
 
-.contacte-nou .info {
+.contacte-info {
   flex: 1;
-  min-width: 300px;
-  padding: 20px;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contacte-nou .info h1 {
+.contacte-info h1 {
   font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 400; /* Sense negreta */
   margin-bottom: 20px;
 }
 
-.contacte-nou .info p {
+.contacte-info p {
   font-size: 1.1rem;
   margin-bottom: 20px;
-  color: #333;
 }
 
-.contacte-nou .contact-links a {
+.contact-links a {
   display: block;
-  font-size: 1.1rem;
   color: #111;
-  margin: 12px 0;
+  font-size: 1rem;
+  margin-bottom: 12px;
   text-decoration: none;
 }
 
-.contacte-nou .contact-links a:hover {
+.contact-links a:hover {
   text-decoration: underline;
 }
 
-.contacte-nou .contact-links img {
-  width: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-.contacte-nou .foto {
+.contacte-img {
   flex: 1;
-  min-width: 300px;
-  padding: 20px;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
-.contacte-nou .foto img {
+.contacte-img img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsiu per mòbil */
+@media (max-width: 768px) {
+  .contacte-flex {
+    flex-direction: column;
+  }
+
+  .contacte-img {
+    height: 300px;
+  }
 }
 
 
