@@ -115,10 +115,12 @@
   <script>
     const imatges = document.querySelectorAll(".hero-carousel img");
     let index = 0;
+
     setInterval(() => {
       imatges.forEach((img, i) => {
-        img.style.display = i === index ? "block" : "none";
+        img.classList.remove("active");
       });
+      imatges[index].classList.add("active");
       index = (index + 1) % imatges.length;
     }, 4000);
   </script>
