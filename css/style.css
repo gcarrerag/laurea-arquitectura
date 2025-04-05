@@ -78,7 +78,8 @@ footer {
 
 .projecte-box img {
   width: 100%;
-  height: auto;
+  height: 400px; /* pots ajustar aquesta mida segons et convingui */
+  object-fit: cover;
   display: block;
   transition: filter 0.4s ease;
 }
