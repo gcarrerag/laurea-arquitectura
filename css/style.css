@@ -194,35 +194,43 @@ footer {
 .contacte-page {
   background: url('../images/projecte1.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #fff;
+  color: #111;
 }
 
 .contacte-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.85); /* fons clar translúcid */
+  max-width: 500px;
   margin: 100px auto;
-  padding: 40px;
-  border-radius: 10px;
+  padding: 40px 30px;
+  border-radius: 12px;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contacte-container h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contacte-container p {
   font-size: 1.1rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #333;
 }
 
-.contact-links a {
-  color: #fff;
+.contact-links a,
+.contact-links p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   text-decoration: none;
-  display: block;
-  margin-bottom: 12px;
-  font-weight: 500;
 }
 
 .contact-links a:hover {
@@ -230,10 +238,11 @@ footer {
 }
 
 .contact-links img {
-  width: 24px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
-  margin-right: 8px;
 }
+
 
 
 /* QUI SÓC */
