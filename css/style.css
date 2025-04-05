@@ -288,3 +288,51 @@ a:hover {
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
 }
+.projectes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.projecte-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.projecte-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  text-transform: uppercase;
+}
+
+.projecte-box:hover .overlay {
+  opacity: 1;
+}
+
+.projecte-box:hover img {
+  filter: blur(2px);
+}
