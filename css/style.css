@@ -82,6 +82,7 @@ footer {
   object-fit: cover;
   display: block;
   transition: filter 0.4s ease;
+  border-radius: 0;
 }
 
 .projecte-box:hover img {
