@@ -46,10 +46,12 @@ nav a:hover {
 
 .container h1 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 400; /* sense negreta */
   text-align: center;
   margin-bottom: 30px;
+  text-transform: uppercase; /* ← fa que es vegi SERVEIS en majúscula */
 }
+
 
 footer {
   background: #f9f9f9;
