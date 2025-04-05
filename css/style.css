@@ -270,7 +270,6 @@ footer {
 
 
 
-/* QUI SÓC */
 /* ESTUDI */
 .estudi-section {
   display: flex;
@@ -284,7 +283,7 @@ footer {
 }
 
 .estudi-foto img {
-  width: 400px;
+  width: 450px;
   height: auto;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -298,7 +297,7 @@ footer {
 
 .estudi-text h1 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 400; /* sense negreta */
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: left;
@@ -311,7 +310,7 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Responsive */
+/* Responsive per mòbil */
 @media (max-width: 768px) {
   .estudi-section {
     flex-direction: column;
