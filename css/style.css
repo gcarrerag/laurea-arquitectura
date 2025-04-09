@@ -451,13 +451,12 @@ footer {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
   background: #f9f9f9;
   color: #111;
-  text-align: left;
 }
 
 .footer-col h3 {
