@@ -13,7 +13,10 @@
     <a href="index.html">
       <img src="images/logobo.png" alt="Logo L'Aurea" class="logo" />
     </a>
-    <nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu">
       <a href="index.html">Inici</a>
       <a href="qui-soc.html">Estudi</a>
       <a href="serveis.html">Serveis</a>
@@ -98,6 +101,9 @@
 	} else {
 	    fletxa.textContent = "▼";
 	}
+    }
+    function toggleMenu() {
+	document.querySelector(".menu").classList.toggle("open");
     }
   </script>
 

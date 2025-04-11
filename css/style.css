@@ -11,6 +11,8 @@ body {
   line-height: 1.6;
 }
 
+
+/* HEADER */
 header {
   background: #fff;
   padding: 20px 40px;
@@ -23,16 +25,91 @@ header {
   border-bottom: 1px solid #eee;
 }
 
-nav a {
-  margin-left: 20px;
+/* LOGO */
+.logo {
+  height: 40px;
+}
+
+/* BOTÓ HAMBURGUESA (mostrat sempre) */
+.menu-toggle {
+  display: block;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: auto;
+}
+
+/* MENÚ DESPLEGABLE (amagat per defecte) */
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 10;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+/* Quan el menú està obert */
+.menu.open {
+  display: flex;
+}
+
+/* Estil dels enllaços dins del menú */
+.menu a {
   text-decoration: none;
   color: #111;
   font-weight: 500;
+  margin: 10px 0;
+  font-size: 1rem;
 }
 
-nav a:hover {
+.menu a:hover {
   text-decoration: underline;
 }
+
+
+/* MENÚ RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 10;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu a {
+    margin: 10px 0;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+}
+
+
+
 
 .logo {
   height: 40px;
