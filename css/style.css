@@ -23,7 +23,16 @@ header {
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #eee;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
+
+/*header.scrolled {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}*/
+
 
 /* LOGO */
 .logo {
