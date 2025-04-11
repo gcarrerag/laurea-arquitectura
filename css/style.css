@@ -79,8 +79,18 @@ header {
 /* MENÚ RESPONSIVE */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+      display: block;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      margin-left: auto;
+      color: #111; /* <-- afegim això per forçar el color */
+      appearance: none; /* <-- eliminem l’estil per defecte en iOS */
+      -webkit-appearance: none;
   }
+
 
   .menu {
     display: none;
