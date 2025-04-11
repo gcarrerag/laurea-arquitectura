@@ -13,7 +13,10 @@
     <a href="index.html">
       <img src="images/logobo.png" alt="Logo L'Aurea" class="logo" />
     </a>
-    <nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu">
       <a href="index.html">Inici</a>
       <a href="qui-soc.html">Estudi</a>
       <a href="serveis.html">Serveis</a>
@@ -81,6 +84,12 @@ Pots veure imatges de l’abans i després al nostre perfil d’Instagram.
       <p>© 2025 L’Aurea Arquitectura</p>
     </div>
   </footer>
+  <script>
+
+    function toggleMenu() {
+	document.querySelector(".menu").classList.toggle("open");
+    }
+  </script>
 
 </body>
 </html>
