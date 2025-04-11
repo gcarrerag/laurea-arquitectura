@@ -26,27 +26,27 @@
     <h1>SERVEIS</h1>
     <div class="serveis-lista">
 
-      <div class="servei">
+      <div class="servei" onclick="toggleServei(this)">
         <h2>Projectes d'obra nova</h2>
         <p>Desenvolupament complet de projectes residencials i comercials des de l'esbós fins a l'execució final.</p>
       </div>
 
-      <div class="servei">
+      <div class="servei" onclick="toggleServei(this)">
         <h2>Reformes i rehabilitacions</h2>
         <p>Reformes integrals o parcials per optimitzar espais existents amb solucions elegants i funcionals.</p>
       </div>
 
-      <div class="servei">
+      <div class="servei" onclick="toggleServei(this)">
         <h2>Disseny d'interiors</h2>
         <p>Espais personalitzats per a habitatges i espais comercials, amb atenció al detall, equilibri de materials i funcionalitat.</p>
       </div>
 
-      <div class="servei">
+      <div class="servei" onclick="toggleServei(this)">
         <h2>Certificats i legalitzacions</h2>
         <p>Gestió de certificats energètics, cèdules d’habitabilitat, ITE, divisions horitzontals, segregacions i altres tràmits tècnics.</p>
       </div>
 
-      <div class="servei">
+      <div class="servei" onclick="toggleServei(this)">
         <h2>Assessorament tècnic</h2>
         <p>Consultoria arquitectònica i assessorament immobiliari abans de comprar una propietat.</p>
       </div>
@@ -89,6 +89,12 @@
     </div>
   </footer>
 
+  <script>
+    function toggleServei(element) {
+      element.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
+
 
