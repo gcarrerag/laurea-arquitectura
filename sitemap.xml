@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url><loc>https://laurea.cat/index.html</loc></url>
+  <url><loc>https://laurea.cat/serveis.html</loc></url>
+  <url><loc>https://laurea.cat/projectes.html</loc></url>
+  <url><loc>https://laurea.cat/qui-soc.html</loc></url>
+  <url><loc>https://laurea.cat/contacte.html</loc></url>
+
+  <!-- Projectes -->
+  <url><loc>https://laurea.cat/projecte1.html</loc></url>
+  <url><loc>https://laurea.cat/projecteCT.html</loc></url>
+  <url><loc>https://laurea.cat/projecteDP.html</loc></url>
+  <url><loc>https://laurea.cat/projecteCG.html</loc></url>
+  <url><loc>https://laurea.cat/projecteBD.html</loc></url>
+  <url><loc>https://laurea.cat/projecteLAPARADA.html</loc></url>
+  <url><loc>https://laurea.cat/projecteEJ.html</loc></url>
+  <url><loc>https://laurea.cat/projecteLG.html</loc></url>
+  <url><loc>https://laurea.cat/projecteCADELL.html</loc></url>
+
+  <!-- Legals -->
+  <url><loc>https://laurea.cat/avislegal.html</loc></url>
+  <url><loc>https://laurea.cat/privacitat.html</loc></url>
+  <url><loc>https://laurea.cat/cookies.html</loc></url>
+
+</urlset>

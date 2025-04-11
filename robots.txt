@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://laurea.cat/sitemap.xml
