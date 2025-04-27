@@ -3,21 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudi d’Arquitectura a Navarcles | L'Aurea Arquitectura</title>
+  <meta name="description" content="L'Aurea Arquitectura és un estudi d’arquitectura amb passió per l’elegància i el detall. Projectes únics a Navarcles i rodalies.">
+  <meta name="keywords" content="arquitectura Navarcles, estudi arquitectura, obra nova, reformes, interiorisme, arquitecte Navarcles">
   
-  <title>Arquitecte a Navarcles | Estudi d'Arquitectura, Reformes i Obra Nova | L'Aurea Arquitectura</title>
-  
-  <meta name="description" content="Busques un arquitecte a Navarcles, Bages, Costa Brava o Costa Daurada? A L'Aurea Arquitectura combinem elegància i detall en projectes d'obra nova, reformes i interiorisme.">
-  
-  <meta name="keywords" content="arquitecte Navarcles, arquitectura Navarcles, estudi arquitectura Navarcles, obra nova Navarcles, reformes Navarcles, interiorisme Navarcles, arquitecte Manresa, arquitecte Bages, arquitecte Costa Brava, arquitecte Costa Daurada">
-  
-  <meta name="author" content="L'Aurea Arquitectura" />
-  
-  <link rel="canonical" href="https://laurea.cat/" />
-  
+  <meta name="author" content="L'Aurea Arquitectura">
+  <link rel="canonical" href="https://laurea.cat/">
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
   <!-- HEADER -->
