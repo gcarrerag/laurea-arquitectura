@@ -3,36 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <title>Arquitecte a Navarcles | Estudi d'Arquitectura, Reformes i Obra Nova | L'Aurea Arquitectura</title>
-  
+
   <meta name="description" content="Busques un arquitecte a Navarcles, Bages, Costa Brava o Costa Daurada? A L'Aurea Arquitectura combinem elegància i detall en projectes d'obra nova, reformes i interiorisme.">
-  
+
   <meta name="keywords" content="arquitecte Navarcles, arquitectura Navarcles, estudi arquitectura Navarcles, obra nova Navarcles, reformes Navarcles, interiorisme Navarcles, arquitecte Manresa, arquitecte Bages, arquitecte Costa Brava, arquitecte Costa Daurada">
-  
+
   <meta name="author" content="L'Aurea Arquitectura" />
-  
+
   <link rel="canonical" href="https://laurea.cat/" />
-  
+
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  
+
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-
-
 <body>
-
   <!-- HEADER -->
   <header>
     <a href="index.html" class="logo-container">
       <img src="images/logobo.png" alt="Logo L'Aurea" class="logo" />
-      <span class="nom-marca">L’AUREA ARQUITECTURA</span>
+      <span class="nom-marca">L'AUREA ARQUITECTURA</span>
     </a>
-
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
     <nav class="menu">
       <a href="index.html">Inici</a>
       <a href="qui-soc.html">Estudi</a>
@@ -41,50 +36,44 @@
       <a href="contacte.html">Contacte</a>
     </nav>
   </header>
-
-
   <!-- HERO - CARRUSEL -->
   <section class="hero">
     <div class="hero-carousel">
-		
-      <img src="images/2.jpg" alt="Projecte 10 class="active" />
-	  <img src="images/bd_1.jpg" alt="Projecte 5" /> 
+
+      <img src="images/2.JPEG" alt="Edifici industrial AGROCAT" class="active" />
+	  <img src="images/bd_1.jpg" alt="Projecte 5" />
       <img src="images/bd_2.jpg" alt="Projecte 5" />
-	  <img src="images/9.jpg" alt="Projecte 10" />
+	  <img src="images/9.JPEG" alt="Edifici industrial AGROCAT" />
 	  <img src="images/bd_4.jpg" alt="Projecte 5" />
       <img src="images/cg_1.jpg" alt="Projecte 4" />
       <img src="images/cn_1.jpg" alt="Projecte 1" />
       <img src="images/cn_6.jpg" alt="Projecte 1" />
-      
+
     </div>
   </section>
-
   <!-- SECCIONS -->
-
   <!-- ESTUDI -->
   <section class="seccio clara">
     <div class="resum-seccio">
       <img src="images/laurea_ad_1.jpg" alt="Estudi" />
       <div class="resum-text">
         <h2>Estudi</h2>
-        <p>Descobreix qui hi ha darrere de L’Aurea, i l’enfocament personalitzat de cada projecte.</p>
+        <p>Descobreix qui hi ha darrere de L'Aurea, i l'enfocament personalitzat de cada projecte.</p>
         <a href="qui-soc.html">Més informació →</a>
       </div>
     </div>
   </section>
-
   <!-- SERVEIS -->
   <section class="seccio gris">
     <div class="resum-seccio">
       <img src="images/projecte2.jpg" alt="Serveis" />
       <div class="resum-text">
         <h2>Serveis</h2>
-        <p>Oferim des de projectes d’obra nova fins a assessorament tècnic i disseny d’interiors.</p>
+        <p>Oferim des de projectes d'obra nova fins a assessorament tècnic i disseny d'interiors.</p>
         <a href="serveis.html">Consulta els serveis →</a>
       </div>
     </div>
   </section>
-
   <!-- PROJECTES -->
   <section class="seccio clara">
     <div class="resum-seccio">
@@ -96,19 +85,17 @@
       </div>
     </div>
   </section>
-
   <!-- CONTACTE -->
   <section class="seccio gris">
     <div class="resum-seccio">
       <img src="images/cn_1.jpg" alt="Contacte" />
       <div class="resum-text">
         <h2>Contacte</h2>
-        <p>Posa’t en contacte amb nosaltres per començar a donar forma al teu projecte.</p>
+        <p>Posa't en contacte amb nosaltres per començar a donar forma al teu projecte.</p>
         <a href="contacte.html">Contacta →</a>
       </div>
     </div>
   </section>
-
   <footer>
     <div class="footer-grid">
       <div class="footer-col">
@@ -136,18 +123,15 @@
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       <img src="images/logobo.png" alt="Logo" style="height:40px; margin-bottom: 8px;" />
-      <p>© 2025 L’Aurea Arquitectura</p>
+      <p>© 2025 L'Aurea Arquitectura</p>
     </div>
   </footer>
-
   <!-- SCRIPT del carrusel -->
   <script>
     const imatges = document.querySelectorAll(".hero-carousel img");
     let index = 0;
-
     setInterval(() => {
       imatges.forEach((img, i) => {
         img.classList.remove("active");
@@ -155,11 +139,10 @@
       imatges[index].classList.add("active");
       index = (index + 1) % imatges.length;
     }, 4000);
-  
+
     function toggleMenu() {
 	document.querySelector(".menu").classList.toggle("open");
     }
-
     /*window.addEventListener("scroll", () => {
 	const header = document.querySelector("header");
 	if (window.scrollY > 10) {
@@ -169,8 +152,5 @@
 	}
     });*/
   </script>
-
-
 </body>
 </html>
-
